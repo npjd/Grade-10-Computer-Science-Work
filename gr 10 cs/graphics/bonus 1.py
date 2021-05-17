@@ -1,0 +1,20 @@
+from graphics import *
+win = GraphWin('b1',450,250)
+rect= Rectangle(Point(125,0),Point(0,250))
+rect.setFill('red')
+rect.setOutline('red')
+rect.draw(win)
+rect2= Rectangle(Point(325,0),Point(450,250))
+rect2.setFill('red')
+rect2.setOutline('red')
+rect2.draw(win)
+n=140
+m=30
+leaf = Polygon(Point(43.1+n,47.8+m),Point(39+n,58.5+m),Point(18.7+n,55.4+m),Point(25.2+n,80.3+m),Point(14.9+n,84.8+m),Point(51+n,115+m),Point(46+n,127.4+m),Point(82+n,123.3+m)
+               ,Point(80.8+n,161.5+m),Point(85.8+n,161.5+m),Point(88.6+n,123+m),Point(122.5+n,128+m),Point(118+n,115+m),Point(153.7+n,84.6+m),Point(143.6+n,80.5+m),Point(151+n,54.5+m)
+               ,Point(130+n,59.2+m),Point(125.2+n,48+m),Point(106.4+n,66.8+m),Point(111.7+n,25.6+m)
+               ,Point(98.5+n,31.4+m),Point(84.6+n,6.3+m),Point(71+n,31.9+m),Point(57.5+n,25.1+m),Point(62.9+n,66.9+m))
+leaf.setFill('red')
+leaf.setOutline('red')
+leaf.draw(win)
+win.mainloop()

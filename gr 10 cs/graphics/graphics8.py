@@ -1,0 +1,48 @@
+from graphics import *
+from time import sleep
+
+win = GraphWin('q8', 500, 500)
+grafil = Image(Point(250, 300), 'lol.gif')
+grafil.draw(win)
+header = Text(Point(270, 60), 'Happy Friday !!11!1')
+header.setFace('courier')
+header.setSize(28)
+
+face = Circle(Point(420, 60), 35)
+face.setFill(color_rgb(222, 184, 155))
+face.draw(win)
+l1 = Line(Point(410,45),Point(410,60))
+l1.draw(win)
+l2 = Line(Point(430,45),Point(430,60))
+l2.draw(win)
+oval = Oval(Point(430,90),Point(410,75))
+oval.setFill(color_rgb(222, 151, 183))
+oval.draw(win)
+m =10
+star = Polygon(Point(6.47*m,10.83*m),Point(7.92*m,7.98*m),Point(11.2*m,7.44*m)
+               , Point(8.85*m,5.24*m),Point(9.42*m,1.81*m),Point(6.5*m,3.37*m),
+               Point(3.4*m,1.81*m),Point(4.05*m,5.06*m),Point(1.77*m,7.44*m),
+               Point(4.98*m,7.97*m),Point(6.4*m,10.8*m))
+star.setFill('yellow')
+star.draw(win)
+oval2 = Oval(Point(60,80),Point(80,60))
+oval2.setFill(color_rgb(222, 151, 183))
+oval2.draw(win)
+l3 = Line(Point(55,40),Point(80,50))
+l3.draw(win)
+l4 = Line(Point(50,45),Point(45,60))
+l4.draw(win)
+while True:
+    sleep(0.5)
+    header.undraw()
+    header.setTextColor(color_rgb(52, 201, 192))
+    header.draw(win)
+    sleep(0.5)
+    header.undraw()
+    header.setTextColor(color_rgb(213, 52, 235))
+    header.draw(win)
+    sleep(0.5)
+    header.undraw()
+    header.setTextColor(color_rgb(214, 169, 71))
+    header.draw(win)
+win.mainloop()
